@@ -171,7 +171,7 @@ function moveDodger(e) {
   
       window.requestAnimationFrame(function(){
         var leftPos  = positionToInteger(DODGER.style.left);
-        if (leftPos>0) {
+        if (leftPos<360) {
             DODGER.style.left = `${leftPos+4}px`;
             console.log(`Dodger2: (${leftPos},${leftPos+40})`);
         }
