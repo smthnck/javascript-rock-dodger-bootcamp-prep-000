@@ -132,7 +132,7 @@ function endGame() {
     //document.querySelectorAll('rock').remove()
     //$('.rock').remove();
     for(let i=0;i<ROCKS.length;i++){
-      rock.remove;
+      ROCKS[i].remove();
     }
     window.removeEventListener('keydown',moveDodger);
     alert('YOU LOSE!');
