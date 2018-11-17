@@ -129,7 +129,8 @@ function createRock(x) {
  */
 function endGame() {
     clearInterval(gameInterval);
-    $('.rock').remove();
+    document.querySelectorAll('rock').remove()
+    //$('.rock').remove();
     window.removeEventListener('keydown',moveDodger);
     alert('YOU LOSE!');
 }
@@ -194,5 +195,5 @@ function start() {
 
   gameInterval = setInterval(function() {
     createRock(Math.floor(Math.random() *  (GAME_WIDTH - 20)))
-  }, 1000)
+  }, 1000);
 }
